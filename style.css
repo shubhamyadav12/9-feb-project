@@ -1,0 +1,62 @@
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+/* Default styles for all screens */
+.large_screen,
+.laptop,
+.tablet,
+.mobile {
+  display: none; /* hide all elements by default */
+}
+
+/* Styles for large screens */
+@media screen and (min-width: 1200px) {
+  .large_screen {
+    display: block; /* show large_screen element */
+  }
+  .large_screen img {
+    width: 100%; /* set image width to 100% of parent container */
+    height: auto; /* maintain aspect ratio of image */
+  }
+}
+
+/* Styles for laptops */
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+  .laptop {
+    display: block; /* show laptop element */
+  }
+  .laptop img {
+    width: 100%; /* set image width to 100% of parent container */
+    height: auto; /* maintain aspect ratio of image */
+  }
+}
+
+/* Styles for tablets */
+@media screen and (min-width: 768px) and (max-width: 779px) {
+  .tablet {
+    display: block; /* show tablet element */
+  }
+  .tablet img {
+    width: 100%; /* set image width to 100% of parent container */
+    height: auto; /* maintain aspect ratio of image */
+  }
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block; /* show mobile element */
+  }
+  .mobile img {
+    width: 100%; /* set image width to 100% of parent container */
+    height: auto; /* maintain aspect ratio of image */
+  }
+}
+
+
